@@ -10,7 +10,8 @@
         
     {% else %}
         <p>No estas registrado</p>
-        <a href="{% url 'login' %}">Log In</a>
+        <a href="{% url 'login' %}">Log In</a> |
+        <a href="{% url 'signup' %}">Sign Up</a>
     {% endif %}
 
     {% for post in post_list %}
